@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhe Dinheiro Agora!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('imagens/dinheiro.jpg'); /* Caminho para a imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8); /* Cor azul com transparência */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+             color: #004085; /* Cor azul */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .form-wrapper {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            opacity: 0.9; /* Transparência para contraste */
+        }
+
+        h2 {
+            color: #007bff; /* Cor azul */
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #007bff; /* Cor azul */
+            border: none;
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+             background-color: #0056b3; /* Azul mais escuro */
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #007bff; /* Cor azul */
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ganhe Dinheiro Agora!</h1>
+</header>
+<div class="container">
+    <div class="form-wrapper">
+        <h2>Você pode ganhar até R$1.000,00!</h2>
+        <p>Preencha o formulário abaixo e ganhe!</p>
+
+        <form id="money-form">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="Banco">Banco:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="button" onclick="submitForm()">Participar</button>
+        </form>
+
+        <p class="result" id="result-text"></p>
+
+        <p class="disclaimer">*Mais de 10 mil ganhadores</p>
+    </div>
+</div>
+
+<script>
+    function submitForm() {
+        const resultText = document.getElementById("result-text");
+        resultText.innerText = "Obrigado por participar! Seus dados estão sendo processados.";
+
+        // Espera 2 segundos antes de redirecionar para outro site
+        setTimeout(function() {
+            window.location.href = "https://www.canva.com/design/DAGRUG2YQKA/YRGR8oKfjvC8g_0njrxXsQ/view?utm_content=DAGRUG2YQKA&utm_campaign=designshare&utm_medium=link&utm_source=editor"; // Coloque o link do site para o qual deseja redirecionar
+        }, 0000); // 1000 milissegundos = 1 segundos
+    }
+</script>
+
+</body>
+</html>
